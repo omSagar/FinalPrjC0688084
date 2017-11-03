@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F800740C1E996D7C002181A1 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F800740A1E996D7C002181A1 /* Model.xcdatamodeld */; };
+		F800740F1E996D99002181A1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F800740E1E996D99002181A1 /* CoreData.framework */; };
+		F80074111E998006002181A1 /* hotelBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80074101E998006002181A1 /* hotelBook.swift */; };
+		F8D473321E998C220017E058 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8D473311E998C220017E058 /* MapKit.framework */; };
+		F8D473341E998F830017E058 /* bookingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D473331E998F830017E058 /* bookingController.swift */; };
+		F8D473361E999A030017E058 /* hotelDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D473351E999A030017E058 /* hotelDetails.swift */; };
 		F8E581281E8F858800A3B7E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E581271E8F858800A3B7E6 /* AppDelegate.swift */; };
 		F8E5812A1E8F858800A3B7E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E581291E8F858800A3B7E6 /* ViewController.swift */; };
 		F8E5812D1E8F858800A3B7E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8E5812B1E8F858800A3B7E6 /* Main.storyboard */; };
@@ -34,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F800740B1E996D7C002181A1 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		F800740E1E996D99002181A1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F80074101E998006002181A1 /* hotelBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hotelBook.swift; sourceTree = "<group>"; };
+		F8D473311E998C220017E058 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F8D473331E998F830017E058 /* bookingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bookingController.swift; sourceTree = "<group>"; };
+		F8D473351E999A030017E058 /* hotelDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hotelDetails.swift; sourceTree = "<group>"; };
 		F8E581241E8F858800A3B7E6 /* FinalPrjC0688084.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalPrjC0688084.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8E581271E8F858800A3B7E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8E581291E8F858800A3B7E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8D473321E998C220017E058 /* MapKit.framework in Frameworks */,
+				F800740F1E996D99002181A1 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +88,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F800740D1E996D99002181A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8D473311E998C220017E058 /* MapKit.framework */,
+				F800740E1E996D99002181A1 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F8E5811B1E8F858700A3B7E6 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +104,7 @@
 				F8E5813B1E8F858800A3B7E6 /* FinalPrjC0688084Tests */,
 				F8E581461E8F858800A3B7E6 /* FinalPrjC0688084UITests */,
 				F8E581251E8F858800A3B7E6 /* Products */,
+				F800740D1E996D99002181A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +121,14 @@
 		F8E581261E8F858800A3B7E6 /* FinalPrjC0688084 */ = {
 			isa = PBXGroup;
 			children = (
+				F8E581571E8F876A00A3B7E6 /* View */,
+				F8E581561E8F875800A3B7E6 /* ViewControllers */,
+				F8E581551E8F874900A3B7E6 /* Models */,
 				F8E581271E8F858800A3B7E6 /* AppDelegate.swift */,
-				F8E581291E8F858800A3B7E6 /* ViewController.swift */,
-				F8E5812B1E8F858800A3B7E6 /* Main.storyboard */,
 				F8E5812E1E8F858800A3B7E6 /* Assets.xcassets */,
 				F8E581301E8F858800A3B7E6 /* LaunchScreen.storyboard */,
 				F8E581331E8F858800A3B7E6 /* Info.plist */,
+				F800740A1E996D7C002181A1 /* Model.xcdatamodeld */,
 			);
 			path = FinalPrjC0688084;
 			sourceTree = "<group>";
@@ -123,6 +149,32 @@
 				F8E581491E8F858800A3B7E6 /* Info.plist */,
 			);
 			path = FinalPrjC0688084UITests;
+			sourceTree = "<group>";
+		};
+		F8E581551E8F874900A3B7E6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F8E581561E8F875800A3B7E6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F8E581291E8F858800A3B7E6 /* ViewController.swift */,
+				F80074101E998006002181A1 /* hotelBook.swift */,
+				F8D473331E998F830017E058 /* bookingController.swift */,
+				F8D473351E999A030017E058 /* hotelDetails.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F8E581571E8F876A00A3B7E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F8E5812B1E8F858800A3B7E6 /* Main.storyboard */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +315,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8E5812A1E8F858800A3B7E6 /* ViewController.swift in Sources */,
+				F80074111E998006002181A1 /* hotelBook.swift in Sources */,
+				F8D473341E998F830017E058 /* bookingController.swift in Sources */,
+				F8D473361E999A030017E058 /* hotelDetails.swift in Sources */,
 				F8E581281E8F858800A3B7E6 /* AppDelegate.swift in Sources */,
+				F800740C1E996D7C002181A1 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +570,7 @@
 				F8E5814E1E8F858800A3B7E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F8E5814F1E8F858800A3B7E6 /* Build configuration list for PBXNativeTarget "FinalPrjC0688084Tests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +579,7 @@
 				F8E581511E8F858800A3B7E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F8E581521E8F858800A3B7E6 /* Build configuration list for PBXNativeTarget "FinalPrjC0688084UITests" */ = {
 			isa = XCConfigurationList;
@@ -530,8 +588,23 @@
 				F8E581541E8F858800A3B7E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F800740A1E996D7C002181A1 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F800740B1E996D7C002181A1 /* Model.xcdatamodel */,
+			);
+			currentVersion = F800740B1E996D7C002181A1 /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = ../Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F8E5811C1E8F858700A3B7E6 /* Project object */;
 }
